@@ -117,7 +117,9 @@ main {
         top: 20px;
         right: 0;
       }
+
     }
+
 
     img {
       width: 100%;
@@ -150,7 +152,12 @@ main {
   .image:hover img.over {
     display: block;
   }
+
+  .on-image-heart:hover {
+    color: red;
+  }
 }
+
 
 /* #endregion main */
 

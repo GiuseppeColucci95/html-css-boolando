@@ -43,8 +43,13 @@
 /* #region header */
 
 header {
-  height: 80px;
   background-color: var(--header-color);
+  height: 80px;
+  margin-bottom: 3rem;
+
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 
   .container {
     width: 70%;
@@ -74,6 +79,10 @@ header {
 /* #endregion header */
 
 /* #region main */
+
+main {
+  padding-top: 80px;
+}
 
 .row-container {
   width: 70%;

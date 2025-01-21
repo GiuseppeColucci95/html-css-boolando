@@ -12,6 +12,12 @@
   --darker-color: black;
 }
 
+.debug {
+  * {
+    border: 1px dashed;
+  }
+}
+
 /* #endregion common */
 
 /* #region utilities */
@@ -65,5 +71,15 @@ header {
 
 /* #region main */
 
+.row-container {
+  width: 70%;
+  min-height: 500px;
+  margin: 3rem auto;
+
+  .card {
+    width: 32%;
+    background-color: red;
+  }
+}
 
 /* #endregion main */

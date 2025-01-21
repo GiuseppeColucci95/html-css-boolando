@@ -1,0 +1,192 @@
+/* #region common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: #ff6900;
+  --footer-color: #1a1a1a;
+  --lighter-color: white;
+  --darker-color: black;
+  --prince-color: red;
+  --eco-color: green;
+}
+
+.debug {
+
+  * {
+    border: 1px dashed;
+  }
+
+}
+
+/* #endregion common */
+
+/* #region utilities */
+
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+
+header {
+  background-color: var(--header-color);
+  height: 80px;
+  margin-bottom: 3rem;
+
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+
+    div>a {
+      text-decoration: none;
+      color: var(--lighter-color);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+
+    img {
+      height: 100%;
+      padding: 1.5rem 0;
+    }
+
+    i {
+      color: var(--lighter-color);
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/* #endregion header */
+
+/* #region main */
+
+main {
+  padding-top: 80px;
+}
+
+.row-container {
+  width: 70%;
+  margin: 3rem auto;
+
+  .card {
+    width: 32%;
+
+    .image {
+      width: 100%;
+      position: relative;
+
+      img.over {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+
+      .on-image-discount {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+      }
+
+      .on-image-heart {
+        font-size: 2rem;
+        background-color: var(--lighter-color);
+        padding: 0.5rem 1rem;
+
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .red-price {
+      font-weight: bold;
+      color: var(--prince-color);
+    }
+
+    .offer {
+      color: var(--lighter-color);
+      font-weight: bold;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .discount {
+      background-color: var(--prince-color);
+    }
+
+    .eco {
+      background-color: var(--eco-color);
+    }
+  }
+
+  .image:hover img.over {
+    display: block;
+  }
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+footer {
+  background-color: var(--footer-color);
+
+  .container {
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0;
+
+    h3 {
+      color: var(--lighter-color);
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--lighter-color);
+      font-size: 0.75rem;
+      margin-right: 0.5rem;
+    }
+
+    h4 {
+      color: var(--lighter-color);
+      margin-bottom: 0.75rem;
+    }
+
+    i {
+      color: var(--lighter-color);
+      font-size: 1.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+/* #endregion footer */

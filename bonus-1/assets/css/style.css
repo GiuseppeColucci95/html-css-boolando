@@ -34,6 +34,10 @@
   justify-content: space-between;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
 .ai-c {
   align-items: center;
 }
@@ -64,9 +68,13 @@ header {
       margin-right: 0.5rem;
     }
 
-    img {
+    a {
       height: 100%;
       padding: 1.5rem 0;
+
+      img {
+        height: 100%;
+      }
     }
 
     i {
@@ -90,6 +98,15 @@ main {
 
   .card {
     width: 32%;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
 
     .image {
       width: 100%;

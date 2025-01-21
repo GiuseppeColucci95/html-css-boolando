@@ -10,6 +10,8 @@
   --footer-color: #1a1a1a;
   --lighter-color: white;
   --darker-color: black;
+  --prince-color: red;
+  --eco-color: green;
 }
 
 .debug {
@@ -75,12 +77,63 @@ header {
 
 .row-container {
   width: 70%;
-  min-height: 500px;
+  min-height: 700px;
   margin: 3rem auto;
 
   .card {
     width: 32%;
-    background-color: red;
+
+    .image {
+      width: 100%;
+      position: relative;
+
+      .on-image-discount {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+      }
+
+      .on-image-heart {
+        font-size: 2rem;
+        background-color: var(--lighter-color);
+        padding: 0.5rem 1rem;
+
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .red-price {
+      font-weight: bold;
+      color: var(--prince-color);
+    }
+
+    .offer {
+      color: var(--lighter-color);
+      font-weight: bold;
+      padding: 0.25rem 0.75rem;
+    }
+
+    .discount {
+      background-color: var(--prince-color);
+    }
+
+    .eco {
+      background-color: var(--eco-color);
+    }
+  }
+
+  .card:hover img {
+    content: url('../img/1b.webp');
   }
 }
 

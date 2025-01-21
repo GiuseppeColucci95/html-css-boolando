@@ -77,7 +77,6 @@ header {
 
 .row-container {
   width: 70%;
-  min-height: 700px;
   margin: 3rem auto;
 
   .card {
@@ -86,6 +85,13 @@ header {
     .image {
       width: 100%;
       position: relative;
+
+      img.over {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
 
       .on-image-discount {
         position: absolute;
@@ -132,8 +138,8 @@ header {
     }
   }
 
-  .card:hover img {
-    content: url('../img/1b.webp');
+  .image:hover img.over {
+    display: block;
   }
 }
 
